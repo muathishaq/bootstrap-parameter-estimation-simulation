@@ -29,21 +29,23 @@ Classical parameter estimation methods such as **Maximum Likelihood Estimation (
 
 - **Asymptotic Convergence:** At $n = 500$, MLE and Parametric Bootstrap converge with near-zero bias across all three distributions, while Weibull MoM remains less efficient.
 - **Interval Coverage:** Percentile bootstrap intervals exhibit under-coverage at $n = 20$ (0.871–0.922) and approach the nominal 95% level as $n$ grows.
+
+## Repository Structure
+```text
 ├── README.md
 ├── Report/
-│   └── Graduation_Project_Report.pdf        # Full thesis report, derivations, tables & plots
+│   └── Graduation_Project_Report.pdf      # Full thesis report, derivations, tables & plots
 └── R_Scripts/
     ├── 01_Normal/
-    │   ├── 01_normal_mom.R                  # Method of Moments simulation for N(0, 1)
-    │   ├── 02_normal_mle.R                  # Maximum Likelihood simulation for N(0, 1)
+    │   ├── 01_normal_mom.R                # Method of Moments simulation for N(0, 1)
+    │   ├── 02_normal_mle.R                # Maximum Likelihood simulation for N(0, 1)
     │   ├── 03_normal_parametric_bootstrap.R # Parametric Bootstrap & 95% CI simulation
-    │   └── 04_normal_mc_convergence.R       # Monte Carlo running-average convergence diagnostics
+    │   └── 04_normal_mc_convergence.R     # Monte Carlo running-average convergence diagnostics
     ├── 02_Exponential/
-    │   ├── 01_exponential_mom.R             # Method of Moments simulation for Exp(0.5)
-    │   ├── 02_exponential_mle.R             # Maximum Likelihood simulation for Exp(0.5)
+    │   ├── 01_exponential_mom.R           # Method of Moments simulation for Exp(0.5)
+    │   ├── 02_exponential_mle.R           # Maximum Likelihood simulation for Exp(0.5)
     │   └── 03_exponential_parametric_bootstrap.R # Parametric Bootstrap & 95% CI simulation
     └── 03_Weibull/
-        ├── 01_weibull_mom.R                 # Numerical MoM (uniroot) simulation for Weibull(0.5, 4)
-        ├── 02_weibull_mle.R                 # Numerical MLE (fitdistrplus / L-BFGS-B) simulation
+        ├── 01_weibull_mom.R               # Numerical MoM (uniroot) simulation for Weibull(0.5, 4)
+        ├── 02_weibull_mle.R               # Numerical MLE (fitdistrplus / L-BFGS-B) simulation
         └── 03_weibull_parametric_bootstrap.R # Parametric Bootstrap & 95% CI simulation
-```
