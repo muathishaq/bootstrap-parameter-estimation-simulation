@@ -28,10 +28,7 @@ Classical parameter estimation methods such as **Maximum Likelihood Estimation (
 | **Weibull** | $\beta$ (Scale) | $1.3311$ / $0.3288$ | **$0.0441$** | Reduced scale MSE from $8.9797$ (MoM) and $4.6461$ (MLE) to **$4.2179$** |
 
 - **Asymptotic Convergence:** At $n = 500$, MLE and Parametric Bootstrap converge with near-zero bias across all three distributions, while Weibull MoM remains less efficient.
-- **Interval Coverage:** Percentile bootstrap intervals exhibit under-coverage at $n = 20$ ($0.871$–$0.922$) and approach the nominal $95\%$ level as $n$ grows.
-
-## Repository Structure
-```text
+- **Interval Coverage:** Percentile bootstrap intervals exhibit under-coverage at $n = 20$ (0.871–0.922) and approach the nominal 95% level as $n$ grows.
 ├── README.md
 ├── Report/
 │   └── Graduation_Project_Report.pdf        # Full thesis report, derivations, tables & plots
